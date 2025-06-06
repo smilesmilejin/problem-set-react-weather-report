@@ -1,12 +1,28 @@
-# React + Vite
+# Problem Set: React Weather Report
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Directions
+Create a small, practice React app named react-weather-report.
+Run this command to create this practice project.
 
-Currently, two official plugins are available:
+$ npm create -y vite@latest react-weather-report -- --template react
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Change into this directory, and run the server.
+There is no submission for this problem set. Be prepared to share your work in small groups.
 
-## Expanding the ESLint configuration
+Practice
+Create a small weather app that has two components: App and Temperature.
+The Temperature component must display a numeric temperature. Also, this component must include two buttons:
+One button increases the temperature by one degree
+One button decreases the temperature by one degree
+Pick either Fahrenheit or Celsius measurements.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+When the temperature displayed is within certain ranges, the color of the temperature must change:
+
+| Temperature (°C) | Temperature (°F) | Color  |
+| ---------------- | ---------------- | ------ |
+| 26+              | 80+              | Red    |
+| 20–25            | 70–79            | Orange |
+| 15–19            | 60–69            | Yellow |
+| 10–14            | 50–59            | Green  |
+| 9 or below       | 49 or below      | Teal   |
+
